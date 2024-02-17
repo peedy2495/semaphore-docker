@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://jenkins-x.io/schemas/jx-requirements.json": "file:///home/Peedy/Projects/semaphore-docker/requirements.yml"
+    }
+}
