@@ -4,14 +4,14 @@ services:
 
   postgres:
     restart: unless-stopped
-    image: postgres:14
-    hostname: postgres
+    image: docker.io/bitnami/postgresql:15
     volumes: 
      - semaphore-postgres:/var/lib/postgresql/data
     environment:
-     POSTGRES_USER: semaphore
-     POSTGRES_PASSWORD: semaphore
-     POSTGRES_DB: semaphore
+      - POSTGRESQL_USERNAME=semaphore
+      - POSTGRESQL_DATABASE=semaphore
+      - POSTGRESQL_PASSWORD=semaphore
+      - POSTGRESQL_POSTGRES_PASSWORD=changeme
   
   semaphore:
     restart: unless-stopped
