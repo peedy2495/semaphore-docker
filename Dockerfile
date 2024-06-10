@@ -17,7 +17,7 @@ RUN apk add --virtual .build-deps gcc musl-dev
 RUN pip install -r /tmp/requirements.txt
 
 # Setup ansible-mitogen as strategy
-COPY ./ansible.cfg /home/seamphore/ansible.cfg
+COPY ./ansible.cfg /home/semaphore/ansible.cfg
 
 # Switch back to semaphore user so that the container starts
 # and works with the entrypoint defined in the parent container.
