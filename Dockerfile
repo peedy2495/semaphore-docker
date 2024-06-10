@@ -17,7 +17,7 @@ RUN apk add --virtual .build-deps gcc musl-dev
 RUN pip install -r /tmp/requirements.txt
 
 # Setup ansible-mitogen as strategy
-RUN cp ./ansible.cfg /etc/ansible.cfg
+COPY ./ansible.cfg /etc/ansible.cfg
 RUN echo "strategy_plugins =  $(ls -d /usr/lib/python*)/site-packages/ansible_mitogen/plugins/strategy >> /etc/ansible.cfg"
 
 # Switch back to semaphore user so that the container starts
