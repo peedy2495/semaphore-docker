@@ -7,3 +7,6 @@ just create a new image with `docker build --label semaphore -t semaphore:ansibl
 
 <br><br><br>
 Thanks to [andreas-marschke](https://github.com/andreas-marschke)
+
+
+**AddOn: Ansible has been accelerated by Ansible-Mitogen. ** ;-)
