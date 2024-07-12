@@ -10,3 +10,6 @@ Thanks to [andreas-marschke](https://github.com/andreas-marschke)
 
 
 **AddOn: Ansible has been accelerated by Ansible-Mitogen. ** ;-)
+
+additional modules:
+- jmespath for parsing YAML content
