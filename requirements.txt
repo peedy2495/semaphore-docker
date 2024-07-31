@@ -1,6 +1,6 @@
-ansible==9.6.1
-ansible-specdoc==0.0.14
-mitogen==0.3.7
+ansible==9.8.0
+ansible-specdoc==0.0.15
+mitogen==0.3.8
 appdirs==1.4.4
 baron==0.10.1
 cffi==1.16.0
